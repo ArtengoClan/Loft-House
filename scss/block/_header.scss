@@ -1,0 +1,79 @@
+.header {
+    min-height: 840px;
+    background: linear-gradient(
+     180deg,
+     #242B33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%, 
+      #242B33 92.19%),
+     url("./../img/background/header.svg");
+     background-repeat: no-repeat;
+     border: 1px solid #000000;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__content {
+    margin: 0 auto;
+    margin-top: 296px;
+    max-width: 582px;
+}
+
+.header_top {
+    margin-bottom: 85px;
+}
+
+.header__title {
+    text-align: center;
+    @extend %title;
+    font-size: clamp(1.875rem, 1.419rem + 2.28vw, 3rem);    
+}
+
+.header_middle {
+    margin-bottom: 200px;
+}
+
+.header__img_middle {
+    display: block;
+    margin: 0 auto;
+}
+
+.header_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 136px;
+    row-gap: 15px;
+    font-size: 18px;
+    line-height: 1.2;
+
+    @media (max-width: 530px) {
+        justify-content: center;
+    }
+}
+
+.header__text_bottom-left {
+    position: relative;
+
+    &::before {
+        content: url("./../img/decor/location.svg");
+        display: block;
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 0;
+        left: -35px;
+    }
+}
+
+.header__text_bottom-right {
+    position: relative;
+
+    &::before {
+        content: url("./../img/decor/phone.svg");
+        display: block;
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 0;
+        left: -35px;
+    }
+}

@@ -1,0 +1,43 @@
+.benefits {
+    overflow: hidden;
+}
+
+.benefits-row {
+    position: relative;
+    padding: 120px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 70px;
+    row-gap: 40px;
+
+    &::after {
+        content: url(./../img/number/number_2.png);
+        position: absolute;
+        right: -19%;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+}
+
+.benefit__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 193px;
+    min-height: 180px;
+}
+
+.benefit__img {
+    width: 80px;
+    height: 80px;
+}
+
+.benefit__text {
+    text-align: center;
+    font-family: $font-benefits;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+}

@@ -1,0 +1,35 @@
+.form-bottom__elem {
+    margin-bottom: 191px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 255px);
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+
+
+}
+
+.form-bottom__title {
+    margin-bottom: 38px;
+    @extend %title;
+
+    @media (max-width: 1140px) {
+        text-align: center;
+    }
+}
+
+.form-bottom__agreement{
+    font-size: 13px;
+    order: -1;
+    @media (max-width: 860px) and (min-width: 570px) {
+        order: 1;
+    }
+}
+
+.form-bottom__btn {
+    @media (max-width: 1140px) and (min-width: 860px) {
+        grid-column: span 3;
+    }
+}

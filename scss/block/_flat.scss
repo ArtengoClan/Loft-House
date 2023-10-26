@@ -1,0 +1,92 @@
+.flat {
+    overflow: hidden;
+}
+
+.flat__title {
+    margin-bottom: 88px;
+    @extend %title;
+}
+
+.flat-row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    &::after {
+        content: url(./../img/number/number_3.png);
+        position: absolute;
+        left: -19%;
+        top: 15%;
+        transform: translateY(-50%);
+    }
+
+    @media (max-width: 1140px) {
+        justify-content: center;
+    }
+}
+
+.flat__item {
+    position: relative;
+    width: 540px;
+    height: 320px;
+}
+
+.--flat-change--1 {
+    background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url("./../img/flat/flat_1.png"), #D4C17F;
+   
+    &:hover {
+        border: 2px solid #fff;
+        outline:1px dashed #fff;
+        outline-offset:-5px; 
+        transition: all .3s linear;
+    }
+}
+
+.--flat-change--2 {
+    background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url("./../img/flat/flat_2.png"), #D4C17F;
+
+    &:hover {
+        border: 2px solid #fff;
+        outline:1px dashed #fff;
+        outline-offset:-5px; 
+        transition: all .3s linear;
+    }
+}
+
+.--flat-change--3 {
+    background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url("./../img/flat/flat_3.png"), #D4C17F;
+
+    &:hover {
+        border: 2px solid #fff;
+        outline:1px dashed #fff;
+        outline-offset:-5px; 
+        transition: all .3s linear;
+    }
+}
+
+.--flat-change--4 {
+    background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url("./../img/flat/flat_4.png"), #D4C17F;
+
+    &:hover {
+        border: 2px solid #fff;
+        outline:1px dashed #fff;
+        outline-offset:-5px; 
+        transition: all .3s linear;
+    }
+}
+
+.flat__text {
+    position: absolute;
+    left: 50px;
+    bottom: 44px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    &:hover {
+        border-bottom: 3px solid $accent;
+        transition: border-bottom .3s linear;
+    }
+}

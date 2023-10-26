@@ -1,0 +1,38 @@
+.video {
+    height: 830px;
+    overflow: hidden;
+}
+
+.video__img {
+    position: relative;
+    margin: 0 auto;
+    max-width: 720px;
+    height: 650px;
+    background:linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8)), url("./../img/background/video.jpg"); 
+
+    &::after {
+        content: url(./../img/number/number_four.png);
+        position: absolute;
+        right: -58%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:hover {
+        filter: brightness(110%);
+        transition: filter .3s ease-in;
+    }
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    &:hover {
+        filter: brightness(120%);
+        transform: translate(-50%,-50%) scale(1.3);
+        transition: all .3s ease-in;
+    }
+}
